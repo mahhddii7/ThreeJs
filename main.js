@@ -56,10 +56,10 @@ animate()
 
 
 const rgbLoader = new RGBELoader()
-rgbLoader.load('src hdri Env', (hdrTexture) => {
+rgbLoader.load('model/studio_small_09_1k.hdr', (hdrTexture) => {
     hdrTexture.mapping = THREE.EquirectangularReflectionMapping;
-    scene.background = hdrTexture;
-    scene.environment = hdrTexture
+    // scene.background = hdrTexture;
+    scene.environment = hdrTexture 
 })
 
 // load custom shap
